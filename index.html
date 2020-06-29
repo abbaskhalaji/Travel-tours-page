@@ -13,12 +13,85 @@
 <body>
     
     <div class="container">
-        
+        <div class="slider">
+            <div class="owl-carousel">
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/newyork.jpg" alt="New York">
+                            <h3>New York</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/greece.jpg" alt="Greece">
+                            <h3>Greece</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/hongkong.jpg" alt="Hong Kong">
+                            <h3>Hong Kong</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/italy.jpg" alt="Italy">
+                            <h3>Italy</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/london.jpg" alt="London">
+                            <h3>London</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/paris.jpg" alt="Paris">
+                            <h3>Paris</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/tehran.jpg" alt="Tehran">
+                            <h3>Tehran</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    <script src="js/script.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items:2,
+                loop:false,
+                nav:false,
+                margin:30,
+                responsive:{
+                    600:{
+                        items:4
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>‍
