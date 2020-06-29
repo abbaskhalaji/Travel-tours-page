@@ -17,14 +17,6 @@ body {
     font-size: 15px;
     /* font-family: 'Playfair Display', serif; */ 
 }
-.container {
-    width: 100%;
-    height: 100vh;
-}
-.row {
-    margin: 20px auto;
-    width: 1200px;
-}
 .heading {
     text-align: center;
     padding: 40px 0 0 0;
@@ -35,9 +27,6 @@ body {
 .slider {
     padding: 20px 0;
     margin: 30px auto;
-    /* position: relative;
-    top: 50%;
-    transform: translateY(-50%); */
 }
 .slide-box {
     position: relative;
@@ -61,13 +50,9 @@ body {
     border-radius: 0 0 5px 5px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgb(0, 0, 0));
     width: 100%;
-    z-index: 1;
-    opacity: 1;
+    margin: 0;
 }
 
-.footer-secleft {
-    display: inline-block;
-}
 .wt-footer ul {
     padding: 0;
 }
@@ -76,8 +61,13 @@ body {
     padding: 0 10px;
     font-size: 15px; 
 }
-
+.wt-footer ul li a {
+    color: #212121;
+    transition: all .3s;
+}
+.wt-footer ul li a:hover {
+    color: #0D47A1;
+}
 .footer-secright {
-    display: inline-block;
-    float: right;
+    text-align: right;
 }

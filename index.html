@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -14,11 +15,37 @@
     
     <div class="container">
         <div class="row heading">
-            <h1>Find a tour</h1>
+            <div class="col-12">
+                <h1>Find a tour</h1>
+            </div>
         </div>
-
+    </div>
         <div class="slider">
             <div class="owl-carousel">
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/london.jpg" alt="London">
+                            <h3>London</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/paris.jpg" alt="Paris">
+                            <h3>Paris</h3>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="slide-box">
+                            <img src="Images/tehran.jpg" alt="Tehran">
+                            <h3>Tehran</h3>
+                        </div>
+                    </a>
+                </div>
                 <div>
                     <a href="#">
                         <div class="slide-box">
@@ -51,43 +78,18 @@
                         </div>
                     </a>
                 </div>
-                <div>
-                    <a href="#">
-                        <div class="slide-box">
-                            <img src="Images/london.jpg" alt="London">
-                            <h3>London</h3>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="slide-box">
-                            <img src="Images/paris.jpg" alt="Paris">
-                            <h3>Paris</h3>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="slide-box">
-                            <img src="Images/tehran.jpg" alt="Tehran">
-                            <h3>Tehran</h3>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
-
-        <footer class="wt-footer row">
-            <div class="footer-secleft">
+    <div class="container">
+        <footer class="wt-footer row justify-content-between">
+            <div class="col-12 col-md-6">
                 <ul>
                     <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact us</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Terms of use</a></li>
                 </ul>
             </div>
-            <div class="footer-secright">
+            <div class="col-12 col-md-6 footer-secright">
                 <div class="copyright">
                     ©2020 World Tour
                 </div>
@@ -97,6 +99,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
@@ -106,7 +110,13 @@
                 nav:false,
                 margin:30,
                 responsive:{
+                    0:{
+                        items:1
+                    },
                     600:{
+                        items:2
+                    },
+                    1000:{
                         items:4
                     }
                 }
